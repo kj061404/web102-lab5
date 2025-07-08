@@ -1,0 +1,133 @@
+body {
+  background: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.whole-page {
+  padding: 50px;
+  text-align: center;
+  background: black;
+  color: white;
+  display: flex;
+  gap: 30px;
+}
+
+.side-nav {
+  width: 300px;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.main-content {
+  flex: 1;
+  text-align: center;
+}
+
+.side-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-article {
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.news-article:last-child {
+  border-bottom: none;
+}
+
+.news-article a {
+  color: #646cff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.news-article a:hover {
+  color: #8b8fff;
+  text-decoration: underline;
+}
+
+.icons {
+  padding-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+ul {
+  list-style: none;
+  margin: 25px 50px 75px 30px;
+}
+
+li.main-list {
+  padding: 25px;
+  border-bottom: solid 3px white;
+  font-size: larger;
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 75px;
+}
+
+/* Additional styling for better visual appeal */
+input[type="text"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: white;
+  font-size: 16px;
+  width: 300px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 10px rgba(100, 108, 255, 0.3);
+}
+
+h1 {
+  color: #646cff;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(100, 108, 255, 0.5);
+}
+
+/* Hover effects for list items */
+li.main-list:hover {
+  background: #1a1a1a;
+  transition: background 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .whole-page {
+    padding: 20px;
+  }
+  
+  ul {
+    margin: 15px 20px 40px 15px;
+  }
+  
+  input[type="text"] {
+    width: 250px;
+  }
+}
